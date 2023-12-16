@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Capibara" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАПИБАРА" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSs-g9-Xrd">
+                                <rect key="frame" x="124.33333333333333" y="243.66666666666663" width="181.33333333333337" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capybara111" translatesAutoresizingMaskIntoConstraints="NO" id="e1W-l4-B7g">
+                                <rect key="frame" x="48.666666666666657" y="311" width="333" height="310"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cryingSmile" translatesAutoresizingMaskIntoConstraints="NO" id="JT6-Db-UzI">
+                                <rect key="frame" x="25" y="310.66666666666669" width="380" height="311.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="311" id="THO-wk-ltv"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="cap" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RcT-xn-m4Q">
+                                <rect key="frame" x="190.66666666666666" y="646.66666666666663" width="51" height="31"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <connections>
+                                    <action selector="changeSwift:" destination="BYZ-38-t0r" eventType="valueChanged" id="ExD-kN-HxY"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1th-4Y-v5W"/>
+                            <constraint firstItem="xSs-g9-Xrd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3O9-4m-ZEf"/>
+                            <constraint firstItem="e1W-l4-B7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="81q-Q0-x4w"/>
+                            <constraint firstItem="e1W-l4-B7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FmB-Dd-qaH"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T88-Ty-Wzp"/>
+                            <constraint firstItem="xSs-g9-Xrd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YIV-7T-G87"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7b-AI-3MM"/>
+                            <constraint firstItem="RcT-xn-m4Q" firstAttribute="top" secondItem="JT6-Db-UzI" secondAttribute="bottom" constant="25" id="bGp-x0-LWL"/>
+                            <constraint firstItem="e1W-l4-B7g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dN7-2p-7fj"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hEx-Ge-VaZ"/>
+                            <constraint firstItem="xSs-g9-Xrd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhv-Vl-Liw"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="obg-7N-T1U"/>
+                            <constraint firstItem="RcT-xn-m4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYg-BR-uZg"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t9b-sH-PyH"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uoS-XR-NNs"/>
+                            <constraint firstItem="JT6-Db-UzI" firstAttribute="top" secondItem="xSs-g9-Xrd" secondAttribute="bottom" constant="25" id="vfA-ey-PEm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CapybaraImage" destination="e1W-l4-B7g" id="guQ-xg-w0Z"/>
+                        <outlet property="CryingSmile" destination="JT6-Db-UzI" id="jg7-qX-aJ8"/>
+                        <outlet property="firstLabel" destination="xSs-g9-Xrd" id="yuQ-hc-HbF"/>
+                        <outlet property="twoChangeSwitch" destination="RcT-xn-m4Q" id="55u-JD-OUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.46511627906976" y="2.5751072961373391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="capybara111" width="333.33334350585938" height="310.33334350585938"/>
+        <image name="cryingSmile" width="380" height="361"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
